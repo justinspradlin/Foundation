@@ -13,7 +13,7 @@ add_theme_support( 'post-thumbnails' );
 
 // Disable the admin bar, set to true if you want it to be visible.
 
-show_admin_bar(FALSE);
+show_admin_bar(TRUE);
 
 // Shortcodes
 
