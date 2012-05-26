@@ -38,7 +38,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 // Sidebars
 
-if (function_exists('register_sidebar')) {
+add_action('widgets_init', 'foundation_widgets_init');
+
+function foundation_widgets_init(){
 
 	// Right Sidebar
 
@@ -52,7 +54,6 @@ if (function_exists('register_sidebar')) {
 	));
 	
 	// Footer Sidebar
-	
 	register_sidebar(array(
 		'name'=> 'Footer Sidebar',
 		'id' => 'footer_sidebar',
@@ -62,6 +63,7 @@ if (function_exists('register_sidebar')) {
 		'after_title' => '</h4>',
 	));
 }
+ 
 
 // Comments
 
